@@ -39,7 +39,7 @@ def dashboard_view(page: ft.Page, user_name: str):
                     controls=[
                         ft.Row(
                             controls=[
-                                ft.Image(src="assets/logo/mecanica_express_flat.svg", width=240),
+                                ft.Image(src="../assets/logo/mecanica_express_flat.svg", width=240),
                             ]
                         ),
                         ft.Text(f"Olá, {user_name}", color=COLOR_TEXT, size=16),
@@ -116,4 +116,4 @@ def main(page: ft.Page):
 
 
 if __name__ == "__main__":
-    ft.app(target=main, assets_dir="assets")
+    ft.app(target=main, assets_dir="../assets")

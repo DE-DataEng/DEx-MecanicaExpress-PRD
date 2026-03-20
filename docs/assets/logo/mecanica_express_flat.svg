@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="500" viewBox="0 0 1400 500">
+  <defs>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffb347"/>
+      <stop offset="55%" stop-color="#ff8a00"/>
+      <stop offset="100%" stop-color="#d96a00"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#cfd5df"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="none"/>
+
+  <g transform="translate(40 40)">
+    <path d="M95 240 C135 168, 240 130, 365 132 C460 133, 530 144, 595 166 C653 186, 697 217, 729 250 L701 250 C680 230, 645 213, 590 201 C533 189, 465 184, 376 185 C268 187, 177 216, 120 270 L85 270 C86 259, 89 249, 95 240 Z" fill="url(#orange)"/>
+    <path d="M137 273 C185 219, 269 192, 375 190 C461 189, 529 195, 585 208 C645 222, 689 244, 725 280 L691 281 C665 261, 631 247, 577 236 C528 226, 462 222, 381 222 C289 222, 215 241, 164 281 L137 281 Z" fill="#f7f8fb" opacity="0.92"/>
+    <path d="M238 203 C277 174, 334 161, 415 162 C464 163, 511 168, 550 176 C511 145, 461 127, 370 126 C291 125, 244 146, 198 180 Z" fill="#ffffff" opacity="0.9"/>
+    <path d="M202 204 C249 166, 307 149, 389 149 C441 149, 483 157, 535 173" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" opacity="0.85"/>
+    <circle cx="227" cy="292" r="46" fill="#08101f"/>
+    <circle cx="227" cy="292" r="29" fill="#141f34" stroke="#dbe1ea" stroke-width="4"/>
+    <circle cx="627" cy="292" r="52" fill="#08101f"/>
+    <circle cx="627" cy="292" r="33" fill="#141f34" stroke="#dbe1ea" stroke-width="4"/>
+    <path d="M65 265 H149" stroke="#6f7b8f" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+    <path d="M53 282 H142" stroke="#6f7b8f" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+    <path d="M45 299 H133" stroke="#6f7b8f" stroke-width="6" stroke-linecap="round" opacity="0.55"/>
+    <path d="M40 316 H123" stroke="#6f7b8f" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+    <path d="M77 230 a72 72 0 0 1 144 0" fill="none" stroke="#6c7789" stroke-width="20" opacity="0.95"/>
+    <path d="M77 230 a72 72 0 0 1 144 0" fill="none" stroke="#e7ebf2" stroke-width="8" opacity="0.9"/>
+  </g>
+
+  <text x="860" y="235" font-family="Arial, Helvetica, sans-serif" font-size="116" font-weight="800" fill="#163d95">MECÂNICA</text>
+  <text x="860" y="335" font-family="Arial, Helvetica, sans-serif" font-size="110" font-weight="900" fill="url(#orange)">EXPRESS 2.0</text>
+  <text x="863" y="388" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#5e6b82" letter-spacing="5">SOFTWARE DE GESTÃO</text>
+</svg>
