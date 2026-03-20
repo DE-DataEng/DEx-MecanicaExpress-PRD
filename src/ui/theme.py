@@ -12,6 +12,7 @@ COLOR_TEXT = "#F5F7FB"
 COLOR_TEXT_MUTED = "#B8C2D6"
 
 
+
 def app_theme() -> ft.Theme:
     return ft.Theme(
         color_scheme=ft.ColorScheme(
