@@ -1,0 +1,17 @@
+import flet as ft
+
+from src.app.app import create_app
+
+
+def main(page: ft.Page) -> None:
+    app = create_app(page)
+    app.initialize()
+
+
+if __name__ == "__main__":
+    __view__ = {
+        "desktop": ft.FLET_APP,
+        "webbrowser": ft.WEB_BROWSER,
+        "mobile": ft.FLET_APP
+    }
+    ft.app(target=main, view=__view__["desktop"])
