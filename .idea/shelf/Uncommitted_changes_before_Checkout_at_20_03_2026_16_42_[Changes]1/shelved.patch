@@ -1,0 +1,34 @@
+Index: docs/Questions_oficina.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/docs/Questions_oficina.txt b/docs/Questions_oficina.txt
+deleted file mode 100644
+--- a/docs/Questions_oficina.txt	(revision cd097861b4958be16769aaa16bd5125a4dcc216f)
++++ /dev/null	(revision cd097861b4958be16769aaa16bd5125a4dcc216f)
+@@ -1,1 +0,0 @@
+-como consigo uma lista de todas as oficinas mecanicas de maringa?
+\ No newline at end of file
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+deleted file mode 100644
+--- a/README.md	(revision cd097861b4958be16769aaa16bd5125a4dcc216f)
++++ /dev/null	(revision cd097861b4958be16769aaa16bd5125a4dcc216f)
+@@ -1,1 +0,0 @@
+-# DEx-CarExpress
+Index: desktop.ini
+===================================================================
+diff --git a/desktop.ini b/desktop.ini
+deleted file mode 100644
+--- a/desktop.ini	(revision cd097861b4958be16769aaa16bd5125a4dcc216f)
++++ /dev/null	(revision cd097861b4958be16769aaa16bd5125a4dcc216f)
+@@ -1,4 +0,0 @@
+-[ViewState]
+-Mode=
+-Vid=
+-FolderType=StorageProviderGeneric

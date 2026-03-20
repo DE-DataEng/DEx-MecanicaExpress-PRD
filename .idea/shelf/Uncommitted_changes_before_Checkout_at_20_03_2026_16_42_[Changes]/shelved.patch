@@ -1,0 +1,31 @@
+Index: src/app.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/app.py b/src/app/app.py
+rename from src/app.py
+rename to src/app/app.py
+--- a/src/app.py	(revision cd097861b4958be16769aaa16bd5125a4dcc216f)
++++ b/src/app/app.py	(date 1774035642587)
+@@ -39,7 +39,7 @@
+                     controls=[
+                         ft.Row(
+                             controls=[
+-                                ft.Image(src="assets/logo/mecanica_express_flat.svg", width=240),
++                                ft.Image(src="../assets/logo/mecanica_express_flat.svg", width=240),
+                             ]
+                         ),
+                         ft.Text(f"Olá, {user_name}", color=COLOR_TEXT, size=16),
+@@ -116,4 +116,4 @@
+ 
+ 
+ if __name__ == "__main__":
+-    ft.app(target=main, assets_dir="assets")
++    ft.app(target=main, assets_dir="../assets")
+diff --git a/src/theme.py b/src/ui/theme.py
+rename from src/theme.py
+rename to src/ui/theme.py
+diff --git a/src/login_screen.py b/src/ui/login_screen.py
+rename from src/login_screen.py
+rename to src/ui/login_screen.py

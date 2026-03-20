@@ -4,6 +4,7 @@ git rm -r *
 git checkout -b deploy
 
 git checkout main -- main.py
+
 git checkout main -- requirements.txt
 git checkout main -- .env
 git checkout main -- src/
