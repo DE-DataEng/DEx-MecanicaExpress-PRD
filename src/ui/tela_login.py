@@ -4,7 +4,6 @@ from DEx_Framework.foundations.components import DS_Login_Screen
 from src.core.config.app_config import AppConfig
 
 
-
 def show_login(page: ft.Page, on_login=None) -> None:
     cfg = AppConfig()
     login_screen = DS_Login_Screen(

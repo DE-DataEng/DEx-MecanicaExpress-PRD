@@ -6,7 +6,6 @@ load_dotenv()
 
 from DEx_Framework.foundations.components import DS_ThemeManager
 
-
 @dataclass(frozen=True)
 class AppConfig:
 

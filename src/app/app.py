@@ -1,6 +1,5 @@
 import flet as ft
 
-
 from src.core import AppConfig
 from src.ui.tela_login import show_login
 
