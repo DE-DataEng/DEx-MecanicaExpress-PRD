@@ -2,7 +2,6 @@ import flet as ft
 
 from src.app.app import create_app
 
-
 def main(page: ft.Page) -> None:
     app = create_app(page)
     app.initialize()

@@ -3,6 +3,7 @@ import flet as ft
 from src.core import AppConfig
 from src.ui.tela_login import show_login
 
+
 class MecanicaExpress:
     def __init__(self, page: ft.Page):
         self.page = page
