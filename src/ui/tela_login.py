@@ -18,7 +18,7 @@ def show_login(page: ft.Page, on_login=None) -> None:
         client_logo_src=getattr(cfg, "CLIENT_LOGO_SRC", None),
         right_title="Bem-vindo de volta",
         right_subtitle="Acesse com sua conta para continuar.",
-        right_button_label="Solicitar acesso",
+        right_button_label=getattr(cfg, "RIGHT_BUTTON_LABEL", "Solicitar acesso"),
         on_enter=on_login,
     )
 

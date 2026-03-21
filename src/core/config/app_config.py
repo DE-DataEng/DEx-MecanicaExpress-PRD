@@ -10,8 +10,16 @@ from DEx_Framework.foundations.components import DS_ThemeManager
 class AppConfig:
 
     THEME_MANAGER = DS_ThemeManager()
+    LOGO_SRC = "./src/assets/logo/Logo_MecanicaExpress_Azul.png"
+    CLIENT_LOGO_SRC = "./src/assets/logo/logo_cliente.png"
+    SYSTEM_NAME = "Mecanica Express"
+    WELCOME_MESSAGE = 'Bem-vindo ao mais moderno sistema para gestão de sua mecânica!'
+    RIGHT_TITLE = "Bem vindo de volta"
+    RIGHT_SUBTITLE = 'Acesse com sua conta para continuar...'
+    RIGHT_BUTTON_LABEL = "Clique aqui para solicitar acesso!"
 
-    APP_TITLE: str = "Mecânica Express"
+
+    APP_TITLE: str = SYSTEM_NAME
     WINDOW_WIDTH: int = 1440
     WINDOW_HEIGHT: int = 920
 
