@@ -1,0 +1,19 @@
+{
+  "primary": "#0A2A6B",
+  "primary_light": "#1E4DB7",
+  "primary_dark": "#081F4A",
+
+  "accent": "#FF7A00",
+  "accent_light": "#FFA040",
+  "accent_dark": "#CC6200",
+
+  "background": "#0B0F1A",
+  "surface": "#121826",
+
+  "text_primary": "#FFFFFF",
+  "text_secondary": "#B0B8C1",
+
+  "success": "#28A745",
+  "warning": "#FFC107",
+  "error": "#DC3545"
+}
