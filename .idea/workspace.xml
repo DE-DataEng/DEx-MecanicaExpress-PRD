@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dc5a2b7-f7a5-4ece-a703-9aef71b62651" name="Changes" comment="deploy - 0.0.1 - Initial commiT" />
+    <list default="true" id="9dc5a2b7-f7a5-4ece-a703-9aef71b62651" name="Changes" comment="deploy - 0.0.1 - Initial commiT">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +44,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/DE-DataEng/DEx-MecanicaExpress-PRD.git",
+    "url": "https://github.com/DE-DataEng/DEx-MecanicaExpress.git",
     "accountId": "1e6e8638-90e2-478f-904e-c49ee720e153"
   }
 }]]></component>
@@ -68,10 +71,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "deploy",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/cloud/OneDrive/Projetos/DataEng/DEx-CarExpress",
+    "last_opened_file_path": "D:/cloud/OneDrive/Projetos/DataEng/DEx-MecanicaExpress",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -88,11 +90,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\cloud\OneDrive\Projetos\DataEng\DEx-MecanicaExpress" />
       <recent name="D:\cloud\OneDrive\Projetos\DataEng\DEx-CarExpress" />
       <recent name="D:\cloud\OneDrive\Projetos\DataEng\DEx-CarExpress\docs" />
       <recent name="D:\cloud\OneDrive\Projetos\DataEng\DEx-CarExpress\src" />
       <recent name="D:\cloud\OneDrive\Projetos\DataEng\DEx-CarExpress\src\assets\logo" />
-      <recent name="D:\cloud\OneDrive\Projetos\DataEng\DEx-CarExpress\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\cloud\OneDrive\Projetos\DataEng\DEx-CarExpress" />
@@ -238,6 +240,7 @@
       <workItem from="1773863820689" duration="1296000" />
       <workItem from="1773916277766" duration="41777000" />
       <workItem from="1774036581735" duration="7753000" />
+      <workItem from="1774095749463" duration="646000" />
     </task>
     <task id="LOCAL-00001" summary="main - Initial commit">
       <option name="closed" value="true" />
