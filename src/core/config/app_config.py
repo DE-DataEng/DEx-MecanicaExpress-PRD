@@ -18,6 +18,7 @@ class AppConfig:
     RIGHT_SUBTITLE = 'Acesse com sua conta para continuar...'
     RIGHT_BUTTON_LABEL = "Clique aqui para solicitar acesso!"
 
+
     APP_TITLE: str = SYSTEM_NAME
     WINDOW_WIDTH: int = 1440
     WINDOW_HEIGHT: int = 920
