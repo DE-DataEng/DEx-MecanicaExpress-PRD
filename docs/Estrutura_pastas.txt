@@ -1,0 +1,103 @@
+DEx-Mecanica_Express/
+│
+├── app/                          # Entrada principal da aplicação
+│   ├── main.py
+│   ├── routes.py
+│   └── app_config.py
+│
+├── core/                         # Núcleo do sistema (regras globais)
+│   ├── database/
+│   │   ├── connection_manager.py
+│   │   ├── profiles.json
+│   │   └── drivers/
+│   │       ├── oracle.py
+│   │       ├── postgres.py
+│   │       └── sqlite.py
+│   │
+│   ├── security/
+│   │   ├── auth.py
+│   │   ├── hash.py
+│   │   └── session.py
+│   │
+│   ├── utils/
+│   │   ├── logger.py
+│   │   ├── datetime_utils.py
+│   │   └── validators.py
+│   │
+│   └── constants.py
+│
+├── modules/                      # Domínio da aplicação (ERP Oficina)
+│   ├── clientes/
+│   │   ├── model.py
+│   │   ├── repository.py
+│   │   ├── service.py
+│   │   ├── controller.py
+│   │   └── view.py
+│   │
+│   ├── ordens_servico/
+│   │   ├── model.py
+│   │   ├── repository.py
+│   │   ├── service.py
+│   │   ├── controller.py
+│   │   └── view.py
+│   │
+│   ├── veiculos/
+│   ├── estoque/
+│   ├── financeiro/
+│   └── dashboard/
+│
+├── ui/                           # Camada visual (Flet + Design System)
+│   ├── components/
+│   │   ├── ds_button.py
+│   │   ├── ds_card.py
+│   │   ├── ds_table.py
+│   │   └── ds_form.py
+│   │
+│   ├── layouts/
+│   │   ├── app_shell.py
+│   │   ├── sidebar.py
+│   │   └── header.py
+│   │
+│   ├── screens/
+│   │   ├── home_screen.py
+│   │   ├── clientes_screen.py
+│   │   └── os_screen.py
+│   │
+│   └── theme/
+│       ├── colors.py
+│       ├── typography.py
+│       └── spacing.py
+│
+├── assets/                       # Recursos estáticos
+│   ├── images/
+│   │   ├── logos/
+│   │   ├── icons/
+│   │   └── backgrounds/
+│   │
+│   ├── fonts/
+│   └── styles/
+│
+├── config/                       # Configurações externas
+│   ├── app.env
+│   ├── database_profiles.json
+│   └── settings.json
+│
+├── scripts/                      # Scripts utilitários
+│   ├── build.ps1
+│   ├── publish.ps1
+│   └── setup_env.ps1
+│
+├── tests/                        # Testes
+│   ├── test_database.py
+│   ├── test_services.py
+│   └── test_ui.py
+│
+├── docs/                         # Documentação
+│   ├── architecture.md
+│   ├── database.md
+│   └── api.md
+│
+├── .venv/
+├── requirements.txt
+├── pyproject.toml
+└── README.md
