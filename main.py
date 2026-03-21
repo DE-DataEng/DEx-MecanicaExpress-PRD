@@ -9,9 +9,9 @@ def main(page: ft.Page) -> None:
 
 
 if __name__ == "__main__":
-    __view__ = {
-        "desktop": ft.FLET_APP,
-        "webbrowser": ft.WEB_BROWSER,
-        "mobile": ft.FLET_APP
-    }
-    ft.app(target=main, view=ft.WEB_BROWSER)
+    # __view__ = {
+    #     "desktop": ft.FLET_APP,
+    #     "webbrowser": ft.WEB_BROWSER,
+    #     "mobile": ft.FLET_APP
+    # }
+    ft.app(target=main)
