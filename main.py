@@ -14,4 +14,4 @@ if __name__ == "__main__":
     #     "webbrowser": ft.WEB_BROWSER,
     #     "mobile": ft.FLET_APP
     # }
-    ft.run(main)
+    ft.app(target=main)
