@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Callable, Optional
+import logging
 
 import psycopg2
 from psycopg2 import sql
@@ -39,6 +40,8 @@ class PostgresAuthenticator:
             table=sql.Identifier(self._table_config.table),
             search=sql.Identifier(self._table_config.search_column),
         )
+
+        logging.getLogger(__name__).info("Postgres connect: %s", self._db_config.safe_info())
 
         with psycopg2.connect(
             host=self._db_config.host,
