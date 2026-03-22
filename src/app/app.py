@@ -97,8 +97,8 @@ class MecanicaExpress:
                 kind="error",
             )
             return
-        except Exception:
-            self._show_message("Falha ao conectar no banco.", ft.Colors.RED_600, kind="error")
+        except Exception as error:
+            self._show_message(f"Falha ao conectar no banco.\ntraceback:{error}", ft.Colors.RED_600, kind="error")
             return
 
         if ok:
