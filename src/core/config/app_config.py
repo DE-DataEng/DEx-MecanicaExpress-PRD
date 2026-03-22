@@ -12,12 +12,12 @@ class AppConfig:
     # definição do tema
     THEME_MANAGER = DS_ThemeManager()
     # definicao do painel da esquerda da tela de login
-    LOGO_SRC = "./src/assets/logo/Logo_MecanicaExpress_Azul.png"
+    LOGO_SRC = "logo/Logo_MecanicaExpress_Azul.png"
     SYSTEM_NAME = "Mecanica Express 2.0"
     WELCOME_MESSAGE = 'Bem-vindo ao mais moderno sistema de gestão para a sua oficina mecânica!'
 
     # definição do painel da direita da tela de login
-    CLIENT_LOGO_SRC = "./src/assets/logo/logo_cliente.png"
+    CLIENT_LOGO_SRC = "logo/logo_cliente.png"
     RIGHT_TITLE = "Bem vindo de volta"
     RIGHT_SUBTITLE = 'Acesse com sua conta para continuar...'
     RIGHT_BUTTON_LABEL = "Clique aqui para solicitar acesso!"
