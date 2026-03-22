@@ -1,3 +1,5 @@
+import os
+import logging
 import flet as ft
 from psycopg2.errors import InvalidTextRepresentation
 
@@ -86,7 +88,24 @@ class MecanicaExpress:
                 )
                 return
 
-        authenticator = self._build_authenticator()
+        db_cfg = PostgresConfig()
+        if db_cfg.host in ("localhost", "127.0.0.1") and (
+            os.getenv("RENDER") or os.getenv("RENDER_SERVICE_ID") or os.getenv("RENDER_SERVICE_NAME")
+        ):
+            self._show_message(
+                "Banco em localhost. Configure DATABASE_URL ou DB_HOST no Render.",
+                ft.Colors.AMBER_600,
+                kind="error",
+            )
+            logging.getLogger(__name__).warning(
+                "Banco em localhost no Render. Configure DATABASE_URL ou DB_HOST."
+            )
+        authenticator = PostgresAuthenticator(db_cfg, AuthTableConfig(
+            schema=self.config.AUTH_SCHEMA,
+            table=self.config.AUTH_TABLE,
+            password_column=self.config.AUTH_PASSWORD_COLUMN,
+            search_column=self.config.AUTH_SEARCH_COLUMN,
+        ), verify_func=verify_argon2 if self.config.AUTH_PASSWORD_ALGO.lower() == "argon2" else None)
         try:
             ok = authenticator.authenticate(login_value, password_value)
         except InvalidTextRepresentation:
