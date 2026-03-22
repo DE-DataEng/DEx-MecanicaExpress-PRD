@@ -29,10 +29,14 @@ class MecanicaExpress:
 
     def _configure_page(self) -> None:
         self.page.title = self.config.APP_TITLE
-        self.page.window_width = self.config.WINDOW_WIDTH
-        self.page.window_height = self.config.WINDOW_HEIGHT
-        self.page.window_min_width = 1200
-        self.page.window_min_height = 760
+        is_web = self.page.web
+        if not is_web:
+            self.page.window_width = self.config.WINDOW_WIDTH
+            self.page.window_height = self.config.WINDOW_HEIGHT
+            self.page.window_min_width = 1200
+            self.page.window_min_height = 760
+        else:
+            self.page.scroll = ft.ScrollMode.AUTO
         self.page.padding = 0
         self.page.spacing = 0
         self.page.bgcolor = self.config.THEME_MANAGER.theme.page_bgcolor
