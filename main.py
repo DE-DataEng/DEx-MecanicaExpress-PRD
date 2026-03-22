@@ -29,4 +29,5 @@ if __name__ == "__main__":
         target=main,
         host="0.0.0.0",
         port=port,
+        assets_dir="src/assets",
     )
