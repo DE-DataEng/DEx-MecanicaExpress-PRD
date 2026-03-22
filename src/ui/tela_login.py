@@ -31,6 +31,21 @@ def show_login(page: ft.Page, on_login=None) -> None:
         right_button_label=getattr(cfg, "RIGHT_BUTTON_LABEL", "Solicitar acesso"),
         on_enter=_handle_enter,
     )
+    if getattr(login_screen, "_left_logo", None) is not None:
+        login_screen._left_logo.width = 330
+        login_screen._left_logo.height = 330
+    if getattr(login_screen, "_system_name", None) is not None:
+        login_screen._system_name.size = 24
+        login_screen._system_name.weight = ft.FontWeight.BOLD
+    if getattr(login_screen, "_welcome_message", None) is not None:
+        login_screen._welcome_message.weight = ft.FontWeight.W_600
+    if getattr(login_screen, "painel_right", None) is not None:
+        right_stack = getattr(login_screen.painel_right, "content", None)
+        if isinstance(right_stack, ft.Stack) and right_stack.controls:
+            bg_container = right_stack.controls[0]
+            if isinstance(bg_container, ft.Container) and isinstance(bg_container.content, ft.Image):
+                bg_container.alignment = ft.alignment.center
+                bg_container.content.fit = ft.ImageFit.CONTAIN
 
     page.controls.clear()
     page.add(login_screen)
