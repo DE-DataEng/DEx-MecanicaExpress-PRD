@@ -21,18 +21,18 @@ def show_main_menu(page: ft.Page, on_logout=None) -> None:
     theme_manager = cfg.THEME_MANAGER
     header_token = theme_manager.theme.app_shell.header_token
 
-    current_label = "Atendimento"
+    current_label = "Dashboard"
     pending_label: str | None = None
 
     content_area = ft.Container(
         expand=True,
         padding=24,
-        content=_build_placeholder("Atendimento"),
+        content=_build_placeholder("Dashboard"),
     )
 
     menu_items = [
         SidebarItem(
-            label="Atendimento",
+            label="Dashboard",
             icon=ft.Icons.DASHBOARD_OUTLINED,
             selected_icon=ft.Icons.DASHBOARD,
         ),
