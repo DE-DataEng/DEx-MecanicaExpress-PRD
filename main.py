@@ -10,7 +10,8 @@ def main(page: ft.Page) -> None:
 
 
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", "8000"))
+    env_port = os.getenv("PORT", "8000")
+    port = int(env_port) if env_port.isdigit() else 8000
     ft.app(
         target=main,
         host="0.0.0.0",
